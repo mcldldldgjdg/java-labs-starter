@@ -1,9 +1,8 @@
 package edu.course.lab01;
 
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
 
 class CourseToolkitTest {
 
@@ -20,4 +19,9 @@ class CourseToolkitTest {
 
         assertFalse(result);
     }
+    @Test
+    void returnsTrueForZero() {
+    assertTrue(CourseToolkit.isEven(0));
+}
+
 }
